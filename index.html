@@ -62,7 +62,33 @@
       font-size: 18px;
       margin-top: 20px;
     }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
 
+.tile {
+  position: relative;
+  display: block;
+}
+
+.tile img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff;
+  font-size: 14px;
+  background: rgba(0,0,0,0.6);
+  padding: 5px 10px;
+}
   </style>
 </head>
 
