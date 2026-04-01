@@ -14,13 +14,9 @@
       --max: 1120px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
-    html {
-      scroll-behavior: smooth;
-    }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
@@ -50,6 +46,12 @@
 
     .hero-inner {
       max-width: 760px;
+    }
+
+    .logo-mark {
+      width: 150px;
+      margin: 0 auto 18px;
+      opacity: 0.95;
     }
 
     .eyebrow {
@@ -172,10 +174,6 @@
       background: linear-gradient(to top, rgba(0,0,0,0.82) 0%, rgba(0,0,0,0.18) 48%, rgba(0,0,0,0.08) 100%);
     }
 
-    .tile:hover {
-      transform: translateY(-1px);
-    }
-
     .tile-content {
       position: absolute;
       left: 18px;
@@ -291,8 +289,9 @@
 
     <section class="hero">
       <div class="hero-inner">
+        <img class="logo-mark" src="Olova-transparent.png" alt="Olova logo">
+
         <div class="eyebrow">Independent trading company</div>
-        <h1>OLOVA</h1>
 
         <div class="tagline">
           Sourced abroad.<br>
@@ -315,51 +314,37 @@
     <section class="section" id="overview">
       <div class="section-head">
         <h2 class="section-title">Current Focus</h2>
-        <div class="section-note">Use fixed photo filenames so updates stay easy.</div>
+        <div class="section-note">Fixed filenames make photo swaps easy.</div>
       </div>
 
       <div class="tiles">
-
-        <!-- To change this image later, just replace sourcing.jpg in GitHub -->
-        <a class="tile"
-           href="mailto:vneville@olovatrading.ca?subject=Sourcing%20Inquiry"
-           style="background-image: url('sourcing.jpg');">
+        <a class="tile" href="mailto:vneville@olovatrading.ca?subject=Sourcing%20Inquiry" style="background-image: url('sourcing.jpg');">
           <div class="tile-content">
             <h3>Sourcing</h3>
             <p>Supplier relationships, product discovery, and direct channel development.</p>
           </div>
         </a>
 
-        <!-- To change this image later, just replace concepts.jpg in GitHub -->
-        <a class="tile"
-           href="mailto:vneville@olovatrading.ca?subject=Concept%20Inquiry"
-           style="background-image: url('concepts.jpg');">
+        <a class="tile" href="mailto:vneville@olovatrading.ca?subject=Concept%20Inquiry" style="background-image: url('concepts.jpg');">
           <div class="tile-content">
             <h3>Concepts</h3>
             <p>Early-stage ideas, evaluation, and positioning work in progress.</p>
           </div>
         </a>
 
-        <!-- To change this image later, just replace supply.jpg in GitHub -->
-        <a class="tile"
-           href="mailto:vneville@olovatrading.ca?subject=Supply%20Inquiry"
-           style="background-image: url('supply.jpg');">
+        <a class="tile" href="mailto:vneville@olovatrading.ca?subject=Supply%20Inquiry" style="background-image: url('supply.jpg');">
           <div class="tile-content">
             <h3>Supply</h3>
             <p>Building a flexible base for future product categories and trading opportunities.</p>
           </div>
         </a>
 
-        <!-- To change this image later, just replace contact.jpg in GitHub -->
-        <a class="tile"
-           href="#contact"
-           style="background-image: url('contact.jpg');">
+        <a class="tile" href="#contact" style="background-image: url('contact.jpg');">
           <div class="tile-content">
             <h3>Contact</h3>
             <p>Direct contact for buyer inquiries, sourcing conversations, and future opportunities.</p>
           </div>
         </a>
-
       </div>
 
       <div class="about-contact">
