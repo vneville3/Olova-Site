@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OLOVA Community | Belong and Project Support</title>
+  <meta name="description" content="Community-linked work under OLOVA, including Belong Centre and future projects tied to youth space, culture, and advocacy." />
+  <meta name="theme-color" content="#050505" />
+  <style>
+    :root { --bg:#050505; --panel:#0d0d0d; --line:rgba(255,255,255,.09); --text:#f3f3f3; --muted:#a5a5a5; --max:1180px; --radius:22px; }
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at 50% 10%, rgba(255,255,255,.07), transparent 23%),linear-gradient(180deg,#040404 0%,#050505 46%,#070707 100%);letter-spacing:-.01em} body::before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);background-size:36px 36px;mask-image:radial-gradient(circle at center, black 38%, transparent 100%);opacity:.17}
+    a{color:inherit;text-decoration:none} .wrap{width:min(var(--max), calc(100vw - 32px));margin:0 auto} img{max-width:100%;display:block}.topbar{position:sticky;top:0;z-index:100;background:linear-gradient(180deg, rgba(5,5,5,.8), rgba(5,5,5,.28));backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.05)} .topbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:14px}.brand-mark{width:42px;height:42px;border-radius:12px;padding:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)} .brand-title{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.brand-subtitle,.nav a,.eyebrow,.section-kicker,.card-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.14em}.brand-subtitle,.nav a{color:var(--muted)} .nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a{padding:10px 12px;border-radius:999px;border:1px solid transparent}.nav a:hover,.nav a.active{color:var(--text);border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
+    .hero,.section{padding:28px 0 0}.shell,.card,.contact-panel{border-radius:22px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(13,13,13,.92)} .shell{box-shadow:0 24px 70px rgba(0,0,0,.32)} .hero-inner{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);gap:24px;padding:50px;align-items:start}.eyebrow-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.028);color:#d6d6d6}.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:#d9d9d9;opacity:.72}
+    h1{margin:0;font-size:clamp(40px, 5vw, 74px);line-height:.96;letter-spacing:-.05em;font-weight:600;max-width:760px}.lead,.card p,.contact-panel p,.list li{color:var(--muted);line-height:1.8}.lead{margin:20px 0 0;max-width:700px;font-size:17px}.inline-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-width:164px;min-height:48px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.button.primary{background:#f3f3f3;color:#050505;border-color:#f3f3f3}
+    .side-panel{border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012)), rgba(0,0,0,.18)} .hero-logo{width:132px;opacity:.82;filter:invert(1) brightness(1.04)} .side-label,.section-kicker{color:var(--muted)} .proof-item{display:flex;justify-content:space-between;gap:18px;padding-top:10px;margin-top:10px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
+    .section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:18px;padding-top:6px;border-top:1px solid var(--line)} .section-title{margin:0;font-size:clamp(28px, 4vw, 46px);line-height:1;letter-spacing:-.04em;font-weight:600;max-width:760px} .section-note{max-width:420px;color:var(--muted);font-size:14px;line-height:1.7;text-align:right}
+    .grid-3,.grid-2{display:grid;gap:16px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:28px}.card h3,.contact-panel h2{margin:0 0 12px;font-size:clamp(24px,3vw,34px);line-height:1.02;letter-spacing:-.04em;font-weight:600}.card h4{margin:0 0 10px;font-size:18px;line-height:1.08;letter-spacing:-.03em}.card-kicker{color:#d3d3d3;display:inline-block;margin-bottom:12px}.list{margin:0;padding-left:20px}.list li+li{margin-top:10px}.contact-panel{margin-top:16px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 24%),linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(10,10,10,.92)} footer{padding:18px 0 40px}.footer-line{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line);color:#747474;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
+    @media (max-width:1024px){.hero-inner,.grid-3,.contact-panel{grid-template-columns:1fr}.section-note{text-align:left}} @media (max-width:760px){.topbar-inner{padding:10px 0;align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.hero{padding-top:18px}.hero-inner{grid-template-columns:1fr;padding:28px}.grid-2{grid-template-columns:1fr}.card,.contact-panel{padding:24px}.section-head{flex-direction:column;align-items:flex-start}.section-note{max-width:none}} @media (max-width:520px){.wrap{width:min(var(--max), calc(100vw - 20px))}.brand-subtitle,.nav a{font-size:10px}h1{font-size:42px}.lead,.card p,.contact-panel p{font-size:14px}.button{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="index-v6.html"><span class="brand-mark"><img src="Olova-transparent.png" alt="OLOVA logo"></span><span><span class="brand-title">OLOVA</span><br><span class="brand-subtitle">Trading . Design . Project Development</span></span></a>
+      <nav class="nav" aria-label="Primary"><a href="index-v6.html">Home</a><a href="products.html">Products</a><a href="design.html">Design</a><a class="active" href="community.html">Community</a><a href="contact.html">Contact</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="wrap shell">
+        <div class="hero-inner">
+          <div>
+            <div class="eyebrow-row"><div class="eyebrow"><span class="eyebrow-dot"></span>Community-linked work</div><div class="eyebrow">Belong and future support</div></div>
+            <h1>Projects that matter locally still belong in the picture.</h1>
+            <p class="lead">The community lane gives OLOVA a place to talk about projects that are not just commercial. That includes youth space, advocacy-linked work, and real projects like Belong Centre without pretending they are already fully built out or monetized.</p>
+            <div class="inline-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Community%20Inquiry">Talk community</a><a class="button" href="#belong">View Belong</a></div>
+          </div>
+          <aside class="side-panel">
+            <img class="hero-logo" src="Olova-transparent.png" alt="OLOVA logo">
+            <div class="side-label">Purpose</div>
+            <p>This page keeps the community work visible without confusing it with the core product lane. It shows values, credibility, and the kind of projects you want to support.</p>
+            <div class="proof-item"><span>Lead project</span><span>Belong Centre</span></div>
+            <div class="proof-item"><span>Focus</span><span>Youth space and culture</span></div>
+            <div class="proof-item"><span>Use</span><span>Proof and alignment</span></div>
+            <div class="proof-item"><span>Contact</span><span>Direct inquiry</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="belong">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">Featured project</div><h2 class="section-title">Belong Centre should be present, but framed correctly.</h2></div><div class="section-note">Not the whole business. Not hidden either. Just in the right lane.</div></div>
+        <div class="grid-2">
+          <article class="card"><div class="card-kicker">Belong Centre</div><h3>Community project</h3><p>A community project Vaughan helped shape through concept input, design visualization, and ramp-building support.</p></article>
+          <article class="card"><h3>Why it belongs here</h3><ul class="list"><li>Shows real-world involvement</li><li>Signals community values</li><li>Connects design to use</li><li>Adds credibility without forcing a sales angle</li></ul></article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head"><div><div class="section-kicker">How this lane works</div><h2 class="section-title">Community is a supporting lane, not a distraction.</h2></div><div class="section-note">It gives the brand more depth when kept disciplined.</div></div>
+        <div class="grid-3">
+          <article class="card"><div class="card-kicker">01</div><h3>Values signal</h3><p>Shows what kinds of spaces and projects matter to the company.</p></article>
+          <article class="card"><div class="card-kicker">02</div><h3>Project proof</h3><p>Demonstrates that the work is not only theoretical or commercial.</p></article>
+          <article class="card"><div class="card-kicker">03</div><h3>Future room</h3><p>Makes space for later community-linked case studies without cluttering the homepage.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap contact-panel">
+        <div><h2>Keep the door open for the right projects.</h2><p>Use one contact point for community and collaboration conversations while the structure stays lean.</p></div>
+        <div class="inline-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Community%20Inquiry">vneville@olovatrading.ca</a></div>
+      </div>
+    </section>
+  </main>
+  <footer><div class="wrap footer-line"><span>OLOVA • Community-linked work</span><span><a href="index-v6.html">Back to home</a></span></div></footer>
+</body>
+</html>
