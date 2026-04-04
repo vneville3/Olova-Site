@@ -3,41 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <link rel="stylesheet" href="assets/styles.css" />
   <title>OLOVA | Trading . Design . Project Development</title>
   <meta name="description" content="OLOVA is an independent company in British Columbia working across selective trade, design and visualization, and community-linked project development." />
-  <meta name="theme-color" content="#050505" />
-  <style>
-    :root { --bg:#050505; --panel:#0d0d0d; --line:rgba(255,255,255,.09); --text:#f3f3f3; --muted:#a5a5a5; --max:1180px; --radius:22px; }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at 50% 10%, rgba(255,255,255,.07), transparent 23%),linear-gradient(180deg,#040404 0%,#050505 46%,#070707 100%);letter-spacing:-.01em}
-    body::before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);background-size:36px 36px;mask-image:radial-gradient(circle at center, black 38%, transparent 100%);opacity:.17}
-    a{color:inherit;text-decoration:none} .wrap{width:min(var(--max), calc(100vw - 32px));margin:0 auto} img{max-width:100%;display:block}
-    .topbar{position:sticky;top:0;z-index:100;background:linear-gradient(180deg, rgba(5,5,5,.8), rgba(5,5,5,.28));backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.05)}
-    .topbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:14px}.brand-mark{width:42px;height:42px;border-radius:12px;padding:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)} .brand-title{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.brand-subtitle,.nav a,.eyebrow,.section-kicker,.card-kicker,.tile-num{font-size:11px;text-transform:uppercase;letter-spacing:.14em}.brand-subtitle,.nav a{color:var(--muted)} .nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a{padding:10px 12px;border-radius:999px;border:1px solid transparent}.nav a:hover{color:var(--text);border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
-    .hero,.section{padding:28px 0 0}.hero-shell,.card,.tile,.contact-panel{border-radius:22px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(13,13,13,.92)}
-    .hero-shell{overflow:hidden;box-shadow:0 24px 70px rgba(0,0,0,.32)} .hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(300px,.85fr);gap:24px;padding:50px;align-items:end} .eyebrow-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.028);color:#d6d6d6}.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:#d9d9d9;opacity:.72}
-    h1{margin:0;font-size:clamp(42px, 6vw, 82px);line-height:.94;letter-spacing:-.05em;font-weight:600;max-width:760px}.lead{margin:20px 0 0;max-width:700px;color:var(--muted);font-size:17px;line-height:1.8}.hero-actions,.inline-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-width:164px;min-height:48px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.button.primary{background:#f3f3f3;color:#050505;border-color:#f3f3f3}
-    .side-panel{border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012)), rgba(0,0,0,.18)} .hero-logo{width:132px;opacity:.82;filter:invert(1) brightness(1.04)} .side-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)} .side-copy,.card p,.contact-panel p{color:var(--muted);line-height:1.78} .proof-item{display:flex;justify-content:space-between;gap:18px;padding-top:10px;margin-top:10px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
-    .section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:18px;padding-top:6px;border-top:1px solid var(--line)} .section-title{margin:0;font-size:clamp(28px, 4vw, 46px);line-height:1;letter-spacing:-.04em;font-weight:600;max-width:760px} .section-note{max-width:420px;color:var(--muted);font-size:14px;line-height:1.7;text-align:right}
-    .lane-grid,.project-grid,.tile-grid{display:grid;gap:16px}.lane-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.project-grid,.tile-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:28px}.card h3,.contact-panel h2{margin:0 0 12px;font-size:clamp(24px,3vw,34px);line-height:1.02;letter-spacing:-.04em;font-weight:600}.card h4{margin:0 0 10px;font-size:18px;line-height:1.08;letter-spacing:-.03em} .card-kicker,.tile-num{color:#d3d3d3;display:inline-block;margin-bottom:12px}
-    .tile{--tile-position:center center;position:relative;overflow:hidden;min-height:380px}.tile::before{content:"";position:absolute;inset:-2%;background-image:var(--tile-image);background-size:cover;background-position:var(--tile-position);transform:scale(1.035);filter:brightness(.78) saturate(.94) contrast(1.04)} .tile::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 14%, rgba(255,255,255,.04), transparent 24%),linear-gradient(180deg, rgba(0,0,0,.02) 0%, rgba(0,0,0,.18) 28%, rgba(0,0,0,.38) 56%, rgba(0,0,0,.88) 100%),linear-gradient(90deg, rgba(0,0,0,.34) 0%, rgba(0,0,0,.08) 18%, rgba(0,0,0,.08) 82%, rgba(0,0,0,.36) 100%)} .tile-frame{position:absolute;inset:16px;border-radius:14px;border:1px solid rgba(255,255,255,.06);z-index:2} .tile-content{position:absolute;left:22px;right:22px;bottom:22px;z-index:3}.tile h3{margin:0;font-size:clamp(28px,3vw,40px);line-height:.98;letter-spacing:-.04em}.tile p{margin:10px 0 0;max-width:360px;color:#d6d6d6;font-size:14px;line-height:1.65}
-    .contact-panel{margin-top:16px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 24%),linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(10,10,10,.92)} footer{padding:18px 0 40px}.footer-line{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line);color:#747474;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
-    @media (max-width:1024px){.hero-inner,.contact-panel,.lane-grid{grid-template-columns:1fr}.section-note{text-align:left}.nav{justify-content:flex-start}}
-    @media (max-width:760px){.topbar-inner{padding:10px 0;align-items:flex-start;flex-direction:column}.hero{padding-top:18px}.hero-inner{grid-template-columns:1fr;padding:28px}.project-grid,.tile-grid{grid-template-columns:1fr}.card,.contact-panel{padding:24px}.tile{min-height:320px}.section-head{flex-direction:column;align-items:flex-start}.section-note{max-width:none}}
-    @media (max-width:520px){.wrap{width:min(var(--max), calc(100vw - 20px))}.brand-subtitle,.nav a{font-size:10px}h1{font-size:42px}.lead,.card p,.contact-panel p{font-size:14px}.button{width:100%}}
-  </style>
 </head>
 <body>
-  <header class="topbar">
+<header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="#top" aria-label="OLOVA home">
-        <span class="brand-mark"><img src="Olova-transparent.png" alt="OLOVA logo"></span>
-        <span>
-          <span class="brand-title">OLOVA</span><br>
-          <span class="brand-subtitle">Trading . Design . Project Development</span>
-        </span>
+      <a class="brand" href="index.html" aria-label="OLOVA home">
+        <span class="brand-mark"><img src="assets/olova-mark.svg" alt="OLOVA logo" /></span>
+        <span><span class="brand-title">OLOVA</span><br><span class="brand-subtitle">Trading . Design . Project Development</span></span>
       </a>
       <nav class="nav" aria-label="Primary">
-        <a href="index-v6.html">Home</a>
+        <a class="active" href="index.html">Home</a>
         <a href="products.html">Products</a>
         <a href="design.html">Design</a>
         <a href="community.html">Community</a>
@@ -45,123 +24,157 @@
       </nav>
     </div>
   </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="wrap hero-shell">
-        <div class="hero-inner">
-          <div>
-            <div class="eyebrow-row">
-              <div class="eyebrow"><span class="eyebrow-dot"></span>British Columbia, Canada</div>
-              <div class="eyebrow">Independent . Registered . In motion</div>
-            </div>
-            <h1>Products, design, and project work under one roof.</h1>
-            <p class="lead">OLOVA is an independent company based in British Columbia. It is being built around selective trade, design and visualization, and community-linked project development without pretending to be a giant operation before it has earned that shape.</p>
-            <div class="hero-actions">
-              <a class="button primary" href="mailto:vneville@olovatrading.ca?subject=OLOVA%20Inquiry">Email OLOVA</a>
-              <a class="button" href="#lanes">View directions</a>
-            </div>
+<main id="top">
+  <section class="hero">
+    <div class="wrap shell">
+      <div class="hero-inner">
+        <div class="hero-text">
+          <div class="eyebrow-row">
+            <div class="eyebrow"><span class="eyebrow-dot"></span>British Columbia, Canada</div>
+            <div class="eyebrow">Independent . Registered . In motion</div>
           </div>
-          <aside class="side-panel" aria-label="Company summary">
-            <img class="hero-logo" src="Olova-transparent.png" alt="OLOVA logo">
-            <div class="side-label">Current frame</div>
-            <div class="side-copy">Built as a clean public front door for selective products, design-led thinking, and project work that can grow without becoming a messy pile of unrelated ideas.</div>
-            <div class="proof-item"><span>Trade</span><span>Selective supply</span></div>
-            <div class="proof-item"><span>Design</span><span>Visualization + review</span></div>
-            <div class="proof-item"><span>Community</span><span>Belong and future projects</span></div>
-            <div class="proof-item"><span>Contact</span><span>Direct to founder</span></div>
-          </aside>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="lanes">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">What lives under OLOVA</div>
-            <h2 class="section-title">A cleaner umbrella for the lanes you are actually building.</h2>
+          <h1>Products, design, and project work under one roof.</h1>
+          <p class="lead">OLOVA is being shaped as a broader umbrella that can honestly hold selective products, design and visualization, and community-linked projects without turning into a random pile of unrelated interests.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="mailto:vneville@olovatrading.ca?subject=OLOVA%20Inquiry">Email OLOVA</a>
+            <a class="button" href="design.html">View selected work</a>
           </div>
-          <div class="section-note">The site can stay broad without getting vague. Each lane gets its own page and its own reason to exist.</div>
         </div>
-        <div class="lane-grid">
-          <article class="card">
-            <div class="card-kicker">01</div>
-            <h3>Products</h3>
-            <p>Selective trade, sourcing, and future supply opportunities. Built slowly, not inflated with a fake catalog.</p>
-            <div class="inline-actions"><a class="button" href="products.html">View products</a></div>
-          </article>
-          <article class="card">
-            <div class="card-kicker">02</div>
-            <h3>Design and Visualization</h3>
-            <p>Concept design, 3D visualization, design review, and early-stage planning led by Vaughan Smith-Neville.</p>
-            <div class="inline-actions"><a class="button" href="design.html">View design</a></div>
-          </article>
-          <article class="card">
-            <div class="card-kicker">03</div>
-            <h3>Community</h3>
-            <p>Projects that matter locally, including Belong Centre and future work tied to advocacy, youth space, and culture.</p>
-            <div class="inline-actions"><a class="button" href="community.html">View community</a></div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Visual direction</div>
-            <h2 class="section-title">The image treatment stays tighter and the overall read stays cleaner.</h2>
+        <aside class="hero-media">
+          <img src="assets/port-moody.jpg" alt="Port Moody skatepark concept render" />
+          <div class="hero-chip-row">
+            <span class="chip">Featured concept</span>
+            <span class="chip light">Port Moody</span>
           </div>
-          <div class="section-note">Same fixed filenames. Better crop control. Less harsh edge noise.</div>
-        </div>
-        <div class="tile-grid">
-          <a class="tile" href="products.html" style="--tile-image: url('sourcing.jpg'); --tile-position: center 42%;"><span class="tile-frame"></span><div class="tile-content"><div class="tile-num">01</div><h3>Products</h3><p>Selectively sourced goods and future supply routes for the Canadian market.</p></div></a>
-          <a class="tile" href="design.html" style="--tile-image: url('concepts.jpg'); --tile-position: center 38%;"><span class="tile-frame"></span><div class="tile-content"><div class="tile-num">02</div><h3>Design</h3><p>Concept development, presentation visuals, and design thinking that can travel beyond one lane.</p></div></a>
-          <a class="tile" href="community.html" style="--tile-image: url('supply.jpg'); --tile-position: center 36%;"><span class="tile-frame"></span><div class="tile-content"><div class="tile-num">03</div><h3>Projects</h3><p>Work that connects sourcing, design, and real-world build momentum.</p></div></a>
-          <a class="tile" href="contact.html" style="--tile-image: url('contact.jpg'); --tile-position: center 40%;"><span class="tile-frame"></span><div class="tile-content"><div class="tile-num">04</div><h3>Contact</h3><p>Direct communication for product, design, collaboration, or community inquiries.</p></div></a>
-        </div>
+        </aside>
       </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head">
-          <div>
-            <div class="section-kicker">Selected design work</div>
-            <h2 class="section-title">A real portfolio lane is now part of the plan.</h2>
-          </div>
-          <div class="section-note">No architecture-firm posturing. Just honest positioning around concept work, visualization, and planning support.</div>
-        </div>
-        <div class="project-grid">
-          <article class="card"><div class="card-kicker">Belong Centre</div><h3>Community-led indoor skate space</h3><p>A community project Vaughan helped shape through concept input, design visualization, and ramp building support.</p></article>
-          <article class="card"><div class="card-kicker">Zambia</div><h3>Concept development</h3><p>Skatepark concept work and presentation-ready visuals built to communicate place, flow, and possibility.</p></article>
-          <article class="card"><div class="card-kicker">Ukraine</div><h3>Design exploration</h3><p>Concept-driven work showing how design can hold function, identity, and advocacy at the same time.</p></article>
-          <article class="card"><div class="card-kicker">Port Moody + Botswana</div><h3>Local and international direction</h3><p>Projects that show range, from local site thinking to broader cultural and spatial design concepts.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="wrap contact-panel">
-        <div>
-          <h2>One roof. Several lanes. One contact point.</h2>
-          <p>Use the same email for product inquiries, design and visualization work, collaborations, or community-linked conversations while the structure is still growing.</p>
-        </div>
-        <div class="inline-actions">
-          <a class="button primary" href="mailto:vneville@olovatrading.ca?subject=OLOVA%20Inquiry">vneville@olovatrading.ca</a>
-          <a class="button" href="design.html">Open design page</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="wrap footer-line">
-      <span>OLOVA • British Columbia, Canada</span>
-      <span><a href="https://olovatrading.ca">olovatrading.ca</a></span>
     </div>
-  </footer>
+  </section>
+
+  <section class="section" id="lanes">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">What lives under OLOVA</div>
+          <h2 class="section-title">A clearer umbrella for the lanes you are actually building.</h2>
+        </div>
+        <div class="section-note">Trade stays credible. Design gets room to breathe. Community work stays visible without hijacking the whole site.</div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-kicker">01</div>
+          <h3>Products</h3>
+          <p>Selective trade, sourcing, and future supply opportunities. Built slowly, not padded with a fake catalog.</p>
+          <a class="text-link" href="products.html">See the product lane</a>
+        </article>
+        <article class="card">
+          <div class="card-kicker">02</div>
+          <h3>Design and Visualization</h3>
+          <p>Concept design, 3D visualization, design review, and early-stage planning led by Vaughan Smith-Neville.</p>
+          <a class="text-link" href="design.html">Open the design page</a>
+        </article>
+        <article class="card">
+          <div class="card-kicker">03</div>
+          <h3>Community</h3>
+          <p>Projects that matter locally, including Belong Centre and future work tied to advocacy, youth space, and culture.</p>
+          <a class="text-link" href="community.html">View community work</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap two-col">
+      <div class="image-panel">
+        <img src="assets/lincoln-avenue-1.jpg" alt="Lincoln Avenue Port Coquitlam render" />
+        <div class="hero-chip-row">
+          <span class="chip">Design lane</span>
+          <span class="chip light">Lincoln Avenue, Port Coquitlam</span>
+        </div>
+      </div>
+      <div class="detail-panel">
+        <div class="card-kicker">Proof first</div>
+        <h3>The strongest part of the site is the design lane.</h3>
+        <p>That is where the visuals carry the argument. The work now shows range across civic concepts, public-space detail, landscape thinking, and skate-focused environments instead of asking the copy to do all the lifting.</p>
+        <div class="pill-list">
+          <span class="pill">Belong Centre</span>
+          <span class="pill">Port Moody</span>
+          <span class="pill">Botswana</span>
+          <span class="pill">Zambia</span>
+          <span class="pill">Ukraine</span>
+          <span class="pill">Lincoln Avenue</span>
+        </div>
+        <a class="text-link" href="design.html">See the full project selection</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <div class="section-kicker">Selected visuals</div>
+          <h2 class="section-title">The site now has imagery that actually supports the positioning.</h2>
+        </div>
+        <div class="section-note">No placeholders. No repeated image on this page. Each project still earns its own space.</div>
+      </div>
+      <div class="media-grid">
+        <article class="media-card">
+          <div class="media-thumb">
+            <img src="assets/belong-centre.jpg" alt="Belong Centre park render" />
+            <div class="media-chip-row"><span class="chip">Belong Centre</span><span class="chip light">Community</span></div>
+          </div>
+          <div class="media-copy">
+            <h3>Community project</h3>
+            <p>A public-facing frame for Belong that gives the project room without turning it into the whole business.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <div class="media-thumb">
+            <img src="assets/botswana.jpg" alt="Botswana park concept render" />
+            <div class="media-chip-row"><span class="chip">Botswana</span><span class="chip light">Range</span></div>
+          </div>
+          <div class="media-copy">
+            <h3>Park concept</h3>
+            <p>A broader concept showing atmosphere, landscape, and how you think about flow, setting, and public-facing presentation.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <div class="media-thumb">
+            <img src="assets/zambia.jpg" alt="Zambia park concept render" />
+            <div class="media-chip-row"><span class="chip">Zambia</span><span class="chip light">Concept</span></div>
+          </div>
+          <div class="media-copy">
+            <h3>Landscape-scale vision</h3>
+            <p>Big-picture concept work with a stronger civic and environmental read than a standard skatepark sheet.</p>
+          </div>
+        </article>
+        <article class="media-card">
+          <div class="media-thumb">
+            <img src="assets/ukraine-aerial.jpg" alt="Ukraine concept render" />
+            <div class="media-chip-row"><span class="chip">Ukraine</span><span class="chip light">Aerial</span></div>
+          </div>
+          <div class="media-copy">
+            <h3>Memorial and skate landscape</h3>
+            <p>A design direction that shows your ability to blend spatial narrative, civic presence, and skate use in one composition.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap contact-panel">
+      <div>
+        <h2>One roof. Several lanes. One contact point.</h2>
+        <p>Use the same inbox for product questions, design work, community conversations, or collaboration ideas while the structure keeps taking shape.</p>
+      </div>
+      <div class="inline-actions">
+        <a class="button primary" href="mailto:vneville@olovatrading.ca?subject=OLOVA%20Inquiry">vneville@olovatrading.ca</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer-line"><span>OLOVA • British Columbia, Canada</span><span>GitHub-ready package</span></div></footer>
 </body>
 </html>

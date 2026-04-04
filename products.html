@@ -3,76 +3,102 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <link rel="stylesheet" href="assets/styles.css" />
   <title>OLOVA Products | Selective Supply</title>
   <meta name="description" content="OLOVA products and supply direction, built around selective sourcing, honest positioning, and future routes to market in Canada." />
-  <meta name="theme-color" content="#050505" />
-  <style>
-    :root { --bg:#050505; --panel:#0d0d0d; --line:rgba(255,255,255,.09); --text:#f3f3f3; --muted:#a5a5a5; --max:1180px; --radius:22px; }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:radial-gradient(circle at 50% 10%, rgba(255,255,255,.07), transparent 23%),linear-gradient(180deg,#040404 0%,#050505 46%,#070707 100%);letter-spacing:-.01em} body::before{content:"";position:fixed;inset:0;pointer-events:none;background:linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);background-size:36px 36px;mask-image:radial-gradient(circle at center, black 38%, transparent 100%);opacity:.17}
-    a{color:inherit;text-decoration:none} .wrap{width:min(var(--max), calc(100vw - 32px));margin:0 auto} img{max-width:100%;display:block}.topbar{position:sticky;top:0;z-index:100;background:linear-gradient(180deg, rgba(5,5,5,.8), rgba(5,5,5,.28));backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.05)} .topbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:inline-flex;align-items:center;gap:14px}.brand-mark{width:42px;height:42px;border-radius:12px;padding:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)} .brand-title{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}.brand-subtitle,.nav a,.eyebrow,.section-kicker,.card-kicker{font-size:11px;text-transform:uppercase;letter-spacing:.14em}.brand-subtitle,.nav a{color:var(--muted)} .nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}.nav a{padding:10px 12px;border-radius:999px;border:1px solid transparent}.nav a:hover,.nav a.active{color:var(--text);border-color:rgba(255,255,255,.08);background:rgba(255,255,255,.03)}
-    .hero,.section{padding:28px 0 0}.shell,.card,.contact-panel{border-radius:22px;border:1px solid var(--line);background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(13,13,13,.92)} .shell{box-shadow:0 24px 70px rgba(0,0,0,.32)} .hero-inner{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(300px,.88fr);gap:24px;padding:50px;align-items:start}.eyebrow-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:18px}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.028);color:#d6d6d6}.eyebrow-dot{width:6px;height:6px;border-radius:50%;background:#d9d9d9;opacity:.72}
-    h1{margin:0;font-size:clamp(40px, 5vw, 74px);line-height:.96;letter-spacing:-.05em;font-weight:600;max-width:760px}.lead,.card p,.contact-panel p,.list li{color:var(--muted);line-height:1.8}.lead{margin:20px 0 0;max-width:700px;font-size:17px}.inline-actions{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}.button{display:inline-flex;align-items:center;justify-content:center;min-width:164px;min-height:48px;padding:0 18px;border-radius:999px;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.02);font-size:12px;text-transform:uppercase;letter-spacing:.12em}.button.primary{background:#f3f3f3;color:#050505;border-color:#f3f3f3}
-    .side-panel{border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px;background:linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.012)), rgba(0,0,0,.18)} .hero-logo{width:132px;opacity:.82;filter:invert(1) brightness(1.04)} .side-label,.section-kicker{color:var(--muted)} .proof-item{display:flex;justify-content:space-between;gap:18px;padding-top:10px;margin-top:10px;border-top:1px solid rgba(255,255,255,.08);font-size:12px;text-transform:uppercase;letter-spacing:.12em}
-    .section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:18px;padding-top:6px;border-top:1px solid var(--line)} .section-title{margin:0;font-size:clamp(28px, 4vw, 46px);line-height:1;letter-spacing:-.04em;font-weight:600;max-width:760px} .section-note{max-width:420px;color:var(--muted);font-size:14px;line-height:1.7;text-align:right}
-    .grid-3,.grid-2{display:grid;gap:16px}.grid-3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.card{padding:28px}.card h3,.contact-panel h2{margin:0 0 12px;font-size:clamp(24px,3vw,34px);line-height:1.02;letter-spacing:-.04em;font-weight:600}.card h4{margin:0 0 10px;font-size:18px;line-height:1.08;letter-spacing:-.03em}.card-kicker{color:#d3d3d3;display:inline-block;margin-bottom:12px}.list{margin:0;padding-left:20px}.list li+li{margin-top:10px}.contact-panel{margin-top:16px;padding:34px;display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;background:radial-gradient(circle at 50% 0%, rgba(255,255,255,.06), transparent 24%),linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), rgba(10,10,10,.92)} footer{padding:18px 0 40px}.footer-line{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:18px;border-top:1px solid var(--line);color:#747474;font-size:11px;text-transform:uppercase;letter-spacing:.14em}
-    @media (max-width:1024px){.hero-inner,.grid-3,.contact-panel{grid-template-columns:1fr}.section-note{text-align:left}} @media (max-width:760px){.topbar-inner{padding:10px 0;align-items:flex-start;flex-direction:column}.nav{justify-content:flex-start}.hero{padding-top:18px}.hero-inner{grid-template-columns:1fr;padding:28px}.grid-2{grid-template-columns:1fr}.card,.contact-panel{padding:24px}.section-head{flex-direction:column;align-items:flex-start}.section-note{max-width:none}} @media (max-width:520px){.wrap{width:min(var(--max), calc(100vw - 20px))}.brand-subtitle,.nav a{font-size:10px}h1{font-size:42px}.lead,.card p,.contact-panel p{font-size:14px}.button{width:100%}}
-  </style>
 </head>
 <body>
-  <header class="topbar">
+<header class="topbar">
     <div class="wrap topbar-inner">
-      <a class="brand" href="index-v6.html"><span class="brand-mark"><img src="Olova-transparent.png" alt="OLOVA logo"></span><span><span class="brand-title">OLOVA</span><br><span class="brand-subtitle">Trading . Design . Project Development</span></span></a>
-      <nav class="nav" aria-label="Primary"><a href="index-v6.html">Home</a><a class="active" href="products.html">Products</a><a href="design.html">Design</a><a href="community.html">Community</a><a href="contact.html">Contact</a></nav>
+      <a class="brand" href="index.html" aria-label="OLOVA home">
+        <span class="brand-mark"><img src="assets/olova-mark.svg" alt="OLOVA logo" /></span>
+        <span><span class="brand-title">OLOVA</span><br><span class="brand-subtitle">Trading . Design . Project Development</span></span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="active" href="products.html">Products</a>
+        <a href="design.html">Design</a>
+        <a href="community.html">Community</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
   </header>
-  <main>
-    <section class="hero">
-      <div class="wrap shell">
-        <div class="hero-inner">
-          <div>
-            <div class="eyebrow-row"><div class="eyebrow"><span class="eyebrow-dot"></span>Selective products</div><div class="eyebrow">Supply direction for Canada</div></div>
-            <h1>Trade first, but without fake scale.</h1>
-            <p class="lead">The product lane is built around sourcing, evaluation, and selective routes to market. The right move is not to pretend there are fifty categories ready today. The right move is to present the lane cleanly and let it grow on proof.</p>
-            <div class="inline-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Product%20Inquiry">Ask about products</a><a class="button" href="#direction">View direction</a></div>
-          </div>
-          <aside class="side-panel">
-            <img class="hero-logo" src="Olova-transparent.png" alt="OLOVA logo">
-            <div class="side-label">Current frame</div>
-            <p>This page is positioned honestly for an early-stage company: selective, direct, and still shaping the strongest lanes before overexpanding.</p>
-            <div class="proof-item"><span>Method</span><span>Sourcing + evaluation</span></div>
-            <div class="proof-item"><span>Approach</span><span>Lean and selective</span></div>
-            <div class="proof-item"><span>Market</span><span>Canada</span></div>
-            <div class="proof-item"><span>Contact</span><span>Direct inquiry</span></div>
-          </aside>
+<main>
+<section class="hero">
+  <div class="wrap shell">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="eyebrow-row">
+          <div class="eyebrow"><span class="eyebrow-dot"></span>Selective products</div>
+          <div class="eyebrow">Supply direction for Canada</div>
         </div>
+        <h1>Trade first, but without fake scale.</h1>
+        <p class="lead">The product lane is built around sourcing, evaluation, and selective routes to market. The right move is not to pretend there are fifty categories ready today. The right move is to present the lane cleanly and let it grow on proof.</p>
+        <div class="hero-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Product%20Inquiry">Ask about products</a></div>
       </div>
-    </section>
-    <section class="section" id="direction">
-      <div class="wrap">
-        <div class="section-head"><div><div class="section-kicker">Product direction</div><h2 class="section-title">What this page should do right now.</h2></div><div class="section-note">It should show intent, not pretend the inventory or category spread is further along than reality.</div></div>
-        <div class="grid-3">
-          <article class="card"><div class="card-kicker">01</div><h3>Show the lane</h3><p>Explain that OLOVA is built to source, evaluate, and selectively introduce goods into the Canadian market.</p></article>
-          <article class="card"><div class="card-kicker">02</div><h3>Stay honest</h3><p>Avoid fake product breadth. Let the public read this as disciplined rather than incomplete.</p></article>
-          <article class="card"><div class="card-kicker">03</div><h3>Invite inquiry</h3><p>Use direct contact for early conversations while the product side continues taking shape.</p></article>
+      <aside class="split-panel">
+        <div class="card-kicker">Current frame</div>
+        <h3>Lean and honest.</h3>
+        <p>Use this lane to explain sourcing, evaluation, and selective supply while real products and partnerships continue taking shape.</p>
+        <div class="pill-list">
+          <span class="pill">Selective sourcing</span>
+          <span class="pill">Brand fit</span>
+          <span class="pill">Small launches</span>
+          <span class="pill">Canada-first</span>
         </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <div class="section-kicker">What this lane covers</div>
+        <h2 class="section-title">Small on purpose beats padded on purpose.</h2>
       </div>
-    </section>
-    <section class="section">
-      <div class="wrap">
-        <div class="section-head"><div><div class="section-kicker">How the products lane can grow</div><h2 class="section-title">The structure is ready for real categories later.</h2></div><div class="section-note">This page can expand when the products do, instead of the other way around.</div></div>
-        <div class="grid-2">
-          <article class="card"><h3>Now</h3><ul class="list"><li>Selective sourcing</li><li>Early product evaluation</li><li>Clean contact path</li><li>Minimal public claims</li></ul></article>
-          <article class="card"><h3>Later</h3><ul class="list"><li>Real featured products</li><li>Case studies or supply partnerships</li><li>Category pages</li><li>Actual inventory-backed offers</li></ul></article>
-        </div>
-      </div>
-    </section>
-    <section class="section">
-      <div class="wrap contact-panel">
-        <div><h2>Product inquiries stay simple for now.</h2><p>One email keeps the lane clean while the supply side continues to develop.</p></div>
-        <div class="inline-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Product%20Inquiry">vneville@olovatrading.ca</a></div>
-      </div>
-    </section>
-  </main>
-  <footer><div class="wrap footer-line"><span>OLOVA • Selective products</span><span><a href="index-v6.html">Back to home</a></span></div></footer>
+      <div class="section-note">The page is set up to support real growth later without pretending the catalog already exists.</div>
+    </div>
+    <div class="card-grid">
+      <article class="card"><div class="card-kicker">01</div><h3>Selective sourcing</h3><p>Looking for products and partners that make sense culturally and commercially instead of chasing volume for its own sake.</p></article>
+      <article class="card"><div class="card-kicker">02</div><h3>Market entry support</h3><p>Helping the right product find its footing in Canada through positioning, small launches, and realistic expectations.</p></article>
+      <article class="card"><div class="card-kicker">03</div><h3>Measured growth</h3><p>Building the product side in a way that can expand later without needing a complete public rewrite.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap split-grid">
+    <article class="split-panel">
+      <div class="card-kicker">Current stance</div>
+      <h3>The site should not cosplay as a distribution giant.</h3>
+      <p>That means no inflated claims, no fake supplier web, and no bloated product grid. The stronger move is to frame OLOVA as a company that can source, evaluate, and grow selected product lanes over time.</p>
+    </article>
+    <article class="split-panel">
+      <div class="card-kicker">What helps</div>
+      <h3>What a good inquiry looks like.</h3>
+      <ul class="list">
+        <li>Product category or brand</li>
+        <li>Target market in Canada</li>
+        <li>Rough volume or launch scope</li>
+        <li>Timeline and decision stage</li>
+      </ul>
+    </article>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact-panel">
+    <div>
+      <h2>Send the product or partnership lead.</h2>
+      <p>One inbox keeps the structure simple while the product side is still being built carefully.</p>
+    </div>
+    <div class="inline-actions"><a class="button primary" href="mailto:vneville@olovatrading.ca?subject=Product%20Inquiry">vneville@olovatrading.ca</a></div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap footer-line"><span>OLOVA • Selective products</span><span>GitHub-ready package</span></div></footer>
 </body>
 </html>
