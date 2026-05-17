@@ -1,6 +1,6 @@
 # SEO and AI Readability Audit
 
-## Files changed
+## Files changed in the SEO/AI pass
 
 - `products.html`
 - `trade.html`
@@ -11,6 +11,18 @@
 - `sitemap.xml`
 - `llms.txt`
 - `SEO_AI_READABILITY_AUDIT.md`
+
+## Current canonical strategy
+
+The current site is intentionally using `trade.html` as the canonical public page for the product/trade lane.
+
+- `trade.html` is the indexed canonical page.
+- `products.html` is a compatibility redirect to `trade.html`.
+- `products.html` has a canonical link pointing to `https://olovatrading.ca/trade.html`.
+- Product/Offer JSON-LD uses `https://olovatrading.ca/trade.html` as the URL and stable entity base.
+- `sitemap.xml` lists `https://olovatrading.ca/trade.html` and intentionally does not list `https://olovatrading.ca/products.html`.
+
+This is clean as long as Vaughan wants `Trade` to remain the public-facing label. If Vaughan decides that `Products` should be the public-facing language, the clean future move is a single coordinated switch: make `products.html` the canonical page, update nav/title/meta/schema/sitemap to `products.html`, and make `trade.html` redirect or noindex. Do not leave both pages indexable for the same SPINE/product content.
 
 ## Issues found
 
@@ -36,19 +48,28 @@
 - Preserved the existing `Organization` and `WebSite` JSON-LD on `index.html`.
 - Added one H1 to `products.html` while preserving the redirect behavior.
 - Improved only obvious weak alt text on SPINE and Stories images.
+- Refined `llms.txt` to use more concrete language and to document the products-to-trade redirect.
 
 ## Validation notes
 
 - Root content pages checked for H1 count: `index.html`, `design.html`, `community.html`, `stories.html`, `trade.html`, `projects.html`, `belong-centre.html`, `contact.html`, and `404.html` each have exactly one H1 after this pass.
 - `products.html` now also has exactly one H1, but remains a redirect to `trade.html`.
+- `sitemap.xml` matches the current canonical strategy by listing `trade.html` and not listing `products.html`.
+- `robots.txt` points to `https://olovatrading.ca/sitemap.xml`.
+- JSON-LD remains conservative: no product price, sizes, stock count, shipping terms, licensed architecture claims, engineering claims, or full design-build claims were added.
 - Asset existence was checked against the repository `assets/` directory listing.
 - No binary files were changed.
 - No visual layout changes were made.
-- No main body copy was rewritten beyond the redirect page fallback text and alt text.
+- No main body copy was rewritten beyond the redirect page fallback text, metadata/schema, `llms.txt`, and alt text.
+
+## Recommended human decisions
+
+- Confirm whether `Trade` should remain the public-facing label and canonical URL for the product lane.
+- If `Products` is preferred publicly, approve a coordinated canonical switch from `trade.html` to `products.html` instead of running both.
+- Decide whether `belong-centre.html` should stay as an indexed standalone page or eventually canonicalize into `community.html`.
+- Decide whether legacy nested Shopify-style paths should be redirected, noindexed, or left as historical compatibility paths.
+- Add richer SPINE product details only if verified later: price, available sizes, exact inventory, shipping terms, or product condition.
 
 ## Remaining human decisions
 
-- Decide whether `belong-centre.html` should stay as an indexed standalone page or eventually canonicalize into `community.html`.
-- Decide whether legacy nested Shopify-style paths should be redirected, noindexed, or left as historical compatibility paths.
-- Decide whether `products.html` should remain as a redirect or be removed from public navigation permanently in favor of `trade.html`.
-- Add richer product details only if verified later: price, available sizes, exact inventory, shipping terms, or product condition.
+- Same as the recommended human decisions above; the technical crawl/readability structure is currently consistent, but those naming and legacy-path calls need Vaughan's judgment before further canonical changes.
