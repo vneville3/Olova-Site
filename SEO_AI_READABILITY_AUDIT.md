@@ -8,7 +8,6 @@
 - `community.html`
 - `contact.html`
 - `stories.html`
-- `projects.html`
 - `sitemap.xml`
 - `llms.txt`
 - `SEO_AI_READABILITY_AUDIT.md`
@@ -36,7 +35,7 @@
   - `contact.html`: `ContactPage` with the public inquiry email.
 - Preserved the existing `Organization` and `WebSite` JSON-LD on `index.html`.
 - Added one H1 to `products.html` while preserving the redirect behavior.
-- Improved only obvious weak alt text on SPINE, Stories, and Projects images.
+- Improved only obvious weak alt text on SPINE and Stories images.
 
 ## Validation notes
 
