@@ -1,0 +1,34 @@
+# OLOVA
+
+OLOVA is a skater-owned company and founder-led platform rooted in the Tri-Cities, British Columbia. The site presents Vaughan Smith-Neville's work across skatepark and public-space concept design, visualization, community-linked projects, and a small selective trade lane.
+
+The site should be read as design- and community-led, with product/trade kept secondary. OLOVA does not present itself as an architecture firm, engineering firm, or full municipal design-build skatepark company.
+
+## Key Pages
+
+- Home: https://olovatrading.ca/
+  Overview of OLOVA's design, community, stories, trade, and contact pathways.
+
+- Design: https://olovatrading.ca/design.html
+  Skatepark and public-space concept design, 3D visualization, design review, and early-stage project direction by Vaughan Smith-Neville.
+
+- Community: https://olovatrading.ca/community.html
+  Community-linked work centered on Belong Youth Centre in Port Moody, including local youth-space and skate-space involvement.
+
+- Stories: https://olovatrading.ca/stories.html
+  Background, advocacy roots, public-space thinking, and the human context behind OLOVA.
+
+- Trade: https://olovatrading.ca/trade.html
+  Select product handled from British Columbia. Current trade reality is remaining Canadian odd CIRKUS SPINE Black/Grey stock by direct inquiry.
+
+- Projects: https://olovatrading.ca/projects.html
+  Wider archive of skatepark and public-space concept work, including Zambia, Botswana, Lincoln Avenue, Belong Centre, Port Moody Renovation, and Ukraine concepts.
+
+- Contact: https://olovatrading.ca/contact.html
+  Direct project and trade inquiries through vneville@olovatrading.ca.
+
+## Crawling Notes
+
+Canonical domain: https://olovatrading.ca/
+Sitemap: https://olovatrading.ca/sitemap.xml
+Robots: https://olovatrading.ca/robots.txt
