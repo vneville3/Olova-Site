@@ -1,34 +1,35 @@
 # OLOVA
 
-OLOVA is a skater-owned company and founder-led platform rooted in the Tri-Cities, British Columbia. The site presents Vaughan Smith-Neville's work across skatepark and public-space concept design, visualization, community-linked projects, and a small selective trade lane.
+OLOVA is a skater-owned company based in the Tri-Cities, British Columbia. The site presents Vaughan Smith-Neville's skatepark and public-space concept work, 3D visualization, community-linked projects, stories/background, and a small trade page for current product inquiries.
 
-The site should be read as design- and community-led, with product/trade kept secondary. OLOVA does not present itself as an architecture firm, engineering firm, or full municipal design-build skatepark company.
+OLOVA is design- and community-led. Product is a secondary lane. The site does not claim that OLOVA is an architecture firm, engineering firm, or full design-build skatepark company.
 
 ## Key Pages
 
 - Home: https://olovatrading.ca/
-  Overview of OLOVA's design, community, stories, trade, and contact pathways.
+  Overview and routing page for design, community, stories, trade, and contact.
 
 - Design: https://olovatrading.ca/design.html
-  Skatepark and public-space concept design, 3D visualization, design review, and early-stage project direction by Vaughan Smith-Neville.
+  Skatepark and public-space concepts, visualization, design review, and early-stage project direction.
 
 - Community: https://olovatrading.ca/community.html
-  Community-linked work centered on Belong Youth Centre in Port Moody, including local youth-space and skate-space involvement.
+  Belong Youth Centre and other community-linked skate/youth-space work in the Tri-Cities.
 
 - Stories: https://olovatrading.ca/stories.html
-  Background, advocacy roots, public-space thinking, and the human context behind OLOVA.
+  Vaughan Smith-Neville's skateboarding background, advocacy roots, and design point of view.
 
 - Trade: https://olovatrading.ca/trade.html
-  Select product handled from British Columbia. Current trade reality is remaining Canadian odd CIRKUS SPINE Black/Grey stock by direct inquiry.
+  Current canonical page for product/trade inquiries. It describes remaining Canadian odd CIRKUS SPINE Black/Grey stock handled by direct inquiry from British Columbia.
 
 - Projects: https://olovatrading.ca/projects.html
   Wider archive of skatepark and public-space concept work, including Zambia, Botswana, Lincoln Avenue, Belong Centre, Port Moody Renovation, and Ukraine concepts.
 
 - Contact: https://olovatrading.ca/contact.html
-  Direct project and trade inquiries through vneville@olovatrading.ca.
+  Direct inquiry page for project, design, community, and trade conversations.
 
-## Crawling Notes
+## Canonical Notes
 
-Canonical domain: https://olovatrading.ca/
-Sitemap: https://olovatrading.ca/sitemap.xml
-Robots: https://olovatrading.ca/robots.txt
+- Canonical domain: https://olovatrading.ca/
+- Sitemap: https://olovatrading.ca/sitemap.xml
+- Robots: https://olovatrading.ca/robots.txt
+- Products compatibility URL: https://olovatrading.ca/products.html redirects to https://olovatrading.ca/trade.html and is not listed as a sitemap URL.
