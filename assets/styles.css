@@ -191,21 +191,8 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
   .home-page #lanes .card-grid{gap:20px}
   .home-page #lanes .lane-card{padding:26px}
 
-  .home-page .home-current-focus{padding-top:88px}
-  .home-page .home-current-focus .two-col{
-    grid-template-columns:minmax(0,1.16fr) minmax(360px,.84fr);
-    gap:0;
-  }
-  .home-page .home-current-focus .image-panel{
-    min-height:440px;
-    border-radius:20px 0 0 20px;
-  }
-  .home-page .home-current-focus .detail-panel{
-    min-height:440px;
-    padding:48px;
-    border-left:0;
-    border-radius:0 20px 20px 0;
-  }
+  .home-page .home-selected-work{padding-top:88px}
+  .home-page .home-selected-work .section-head{margin-bottom:28px;padding-top:18px}
 
   .home-page .home-rooted-local{padding-top:92px}
   .home-page .home-rooted-local .section-head{margin-bottom:28px;padding-top:18px}
@@ -313,11 +300,6 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
   }
   .home-page #lanes .lane-card{padding:20px}
 
-  .home-page .home-current-focus .image-panel{
-    min-height:0;
-    aspect-ratio:16/10;
-  }
-  .home-page .home-current-focus .detail-panel{padding:22px}
   .home-page .pill-list{gap:8px}
   .home-page .pill{padding:8px 10px;font-size:10px}
 
