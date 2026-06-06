@@ -225,4 +225,75 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
   .lead,.card p,.media-card p,.split-panel p,.contact-panel p,.detail-panel p{font-size:14px}
   .button{width:100%}
   .button-row .button,.inline-actions .button{width:100%}
+
+  .home-page .topbar{position:static}
+  .home-page .topbar-inner{gap:10px}
+  .home-page .nav{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    width:100%;
+    gap:4px;
+  }
+  .home-page .nav a{
+    padding:8px 4px;
+    font-size:10px;
+    letter-spacing:.08em;
+    text-align:center;
+  }
+
+  .home-page .hero{padding-top:14px}
+  .home-page .hero-inner{gap:18px;padding:20px}
+  .home-page .hero-text h1{
+    font-size:clamp(36px,10.8vw,42px);
+    line-height:.98;
+    text-wrap:balance;
+  }
+  .home-page .hero-text .lead{margin-top:16px;line-height:1.65}
+  .home-page .hero-actions{margin-top:22px;gap:10px}
+  .home-page .hero-media{
+    min-height:0;
+    aspect-ratio:4/3;
+    border-radius:16px;
+  }
+  .home-page .hero-chip-row,
+  .home-page .media-chip-row{
+    left:12px;
+    right:12px;
+    bottom:12px;
+    gap:6px;
+    justify-content:flex-start;
+  }
+  .home-page .chip{
+    padding:8px 10px;
+    font-size:9px;
+    letter-spacing:.1em;
+  }
+
+  .home-page .section{padding-top:24px}
+  .home-page .section-head{gap:12px;margin-bottom:16px}
+  .home-page .section-title{
+    font-size:clamp(27px,8vw,34px);
+    line-height:1.05;
+  }
+  .home-page #lanes .lane-card{padding:20px}
+
+  .home-page .home-current-focus .image-panel{
+    min-height:0;
+    aspect-ratio:16/10;
+  }
+  .home-page .home-current-focus .detail-panel{padding:22px}
+  .home-page .pill-list{gap:8px}
+  .home-page .pill{padding:8px 10px;font-size:10px}
+
+  .home-page .home-rooted-local .media-thumb{aspect-ratio:4/3}
+  .home-page .home-rooted-local .media-copy{padding:20px}
+
+  .home-page .contact-panel{gap:12px;padding:20px}
+  .home-page .contact-panel .button{
+    min-width:0;
+    padding-inline:10px;
+    font-size:10px;
+    letter-spacing:.06em;
+  }
+  .home-page .footer-line{flex-direction:column;gap:8px}
 }
