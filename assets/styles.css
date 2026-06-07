@@ -133,6 +133,7 @@ h1{margin:0;font-size:clamp(42px,6vw,82px);line-height:.94;letter-spacing:-.05em
 
 .media-card{padding:0;overflow:hidden}
 .media-thumb{position:relative;aspect-ratio:16/10;overflow:hidden;border-bottom:1px solid var(--line)}
+.media-thumb img.stories-bank-portrait{object-position:center top}
 .media-copy{padding:22px 22px 24px}
 .media-chip-row{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
 
