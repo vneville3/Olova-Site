@@ -319,13 +319,25 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
   .home-page .footer-line{flex-direction:column;gap:8px}
 }
 
-@media (max-width:1024px){
-  .hero-media.stories-hero-portrait{
+@media (max-width:920px){
+  .stories-page .hero-media.stories-hero-portrait{
     min-height:0;
-    aspect-ratio:3/4;
+    aspect-ratio:auto;
     background:#080808;
   }
-  .hero-media.stories-hero-portrait img.stories-hero-action{
+  .stories-page .hero-media.stories-hero-portrait img.stories-hero-action{
+    width:100%;
+    height:auto;
+    object-fit:contain;
+    object-position:center;
+  }
+  .stories-page .media-thumb.stories-portrait-fullframe{
+    aspect-ratio:auto;
+    background:#080808;
+  }
+  .stories-page .media-thumb.stories-portrait-fullframe img.stories-xiluo-noseslide{
+    width:100%;
+    height:auto;
     object-fit:contain;
     object-position:center;
   }
