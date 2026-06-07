@@ -48,7 +48,7 @@ video{display:block;max-width:100%}
 }
 .topbar-inner{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
 .brand{display:inline-flex;align-items:center;gap:14px;min-width:0}
-.brand-mark{width:42px;height:42px;border-radius:12px;padding:8px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+.brand-mark{width:42px;height:42px;border-radius:12px;padding:4px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
 .brand-title{font-size:14px;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
 .brand-subtitle{font-size:11px;color:var(--muted);letter-spacing:.12em;text-transform:uppercase}
 .nav{display:flex;align-items:center;gap:8px;flex-wrap:wrap;justify-content:flex-end}
