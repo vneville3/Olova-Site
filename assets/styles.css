@@ -1,4 +1,4 @@
-﻿:root{
+:root{
   --bg:#050505;
   --bg-soft:#0b0b0b;
   --panel:#0f0f10;
@@ -79,7 +79,7 @@ h1{margin:0;font-size:clamp(42px,6vw,82px);line-height:.94;letter-spacing:-.05em
 .button.primary:hover{background:#fff;border-color:#fff}
 .text-link{display:inline-flex;align-items:center;gap:10px;margin-top:18px;color:#e5e5e5;font-size:12px;text-transform:uppercase;letter-spacing:.14em}
 .text-link:hover{opacity:.78}
-.text-link::after{content:"â†—";font-size:14px;line-height:1}
+.text-link::after{content:"↗";font-size:14px;line-height:1}
 
 .hero-media,.logo-panel,.image-panel{
   position:relative; min-height:100%;
@@ -233,9 +233,6 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
 }
 .design-page .slava-media-grid{
   grid-template-columns:repeat(3,minmax(0,1fr));
-}
-.design-page .archive-approach-grid{
-  margin-top:16px;
 }
 .design-page .media-thumb-wide{
   aspect-ratio:16/9;
