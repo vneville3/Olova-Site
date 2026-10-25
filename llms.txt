@@ -19,7 +19,7 @@ OLOVA is design- and community-led. Product is a secondary lane. The site does n
   Vaughan Smith-Neville's skateboarding background, advocacy roots, and design point of view.
 
 - Products: https://olovatrading.ca/products.html
-  Canonical product page. It describes remaining Canadian odd CIRKUS SPINE FE26 (Black/Grey, geometric-pattern) skate shoes handled by direct inquiry from British Columbia. Current sizes and terms are confirmed by direct contact; this is not a checkout page.
+  Canonical product page. It describes remaining Canadian odd CIRKUS SPINE FE26 (Black/Grey, geometric-pattern) skate shoes, now displayed with a clearance price and available US-size range. Enquiries and purchases are arranged by email; this is not an online checkout.
 
 - Projects: https://olovatrading.ca/projects.html
   Wider archive of skatepark and public-space concept work, including Zambia, Botswana, Lincoln Avenue, Belong Centre, Port Moody Renovation, and Ukraine concepts.
@@ -38,5 +38,6 @@ OLOVA is design- and community-led. Product is a secondary lane. The site does n
 
 - OLOVA is a small Canadian stockist/importer, not the manufacturer of odd CIRKUS shoes.
 - The current site has product photos and an enquiry path, not a live checkout or real-time inventory API.
-- Product prices, size-by-size counts, tax treatment, shipping terms, and Rasta colourway details are not yet published on the Products page. Do not infer them from old snapshots.
+- Published FE26 clearance offer: C$80 per pair, or two pairs for C$150, plus applicable sales taxes. US sizes 5.5 through 12 (including half sizes) were available when listed; stock by size must be confirmed before purchase.
+- Coquitlam, British Columbia pickup by arrangement. No checkout or real-time stock API; shipping availability and the separate Rasta colourway are not listed on the current Products page. Do not infer them.
 - Main product contact: vneville@olovatrading.ca. Canonical product link: https://olovatrading.ca/products.html
