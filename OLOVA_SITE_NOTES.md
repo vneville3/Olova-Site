@@ -349,3 +349,14 @@ After each meaningful session, update this file with:
 - Identified Trade as a likely better label than Products.
 - Clarified the biggest proof gap: no built concrete project yet from Vaughan’s own design work.
 - Clarified the strongest offer line: a chance to try something new and better thought out.
+
+
+## 2026-10-25: SPINE FE26 sales-page correction (Vaughan-approved)
+
+- Vaughan explicitly reopened visible Products-page copy and price presentation after showing screenshots of the deployed page. This is a targeted, approved exception to the visible-copy freeze, not permission to rewrite Home, Design, Community or other areas.
+- Replaced self-referential “Select product handled without pretending it is the whole company,” “Why this page exists,” “What is actually here,” and “SPINE is the live chapter, not the whole book.” Those internal-positioning phrases do not belong in customer-facing copy.
+- The Products page now leads with odd CIRKUS × OIT SPINE FE26, concise practical construction details, a high-contrast C$80 offer, a C$150 two-pair price, applicable sales taxes, Coquitlam pickup, US sizes 5.5 through 12, and direct size/quantity email actions.
+- Separate Rasta colourway pair in US 10 is mentioned as an enquiry-only option. No unverified Rasta price or photo is published.
+- Changes are scoped to `products.html` and `body.products-page` styles in `assets/styles.css`; home-page positioning, design/community emphasis, main navigation, product imagery, canonical URL, Offer schema, GA4, and `shoe_enquiry_click` tracking are preserved.
+- Durable lesson: Product pages should answer what it is, what it costs, what sizes are available, and how to buy. Internal strategy explanations belong in repository notes, not public headlines. The overall OLOVA site remains design/community led.
+- Dynamic stock and delivery details must not be invented; buyers email to confirm. Do not automatically refresh marketing language or rebuild a store.
