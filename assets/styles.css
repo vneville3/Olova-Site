@@ -375,3 +375,168 @@ video.embedded{width:100%;aspect-ratio:16/9;border-top:1px solid var(--line);bac
   }
   .nav a{padding:7px 6px;font-size:9px;letter-spacing:.06em}
 }
+
+
+/* OLOVA PRODUCTS SALE PAGE V2: scoped to the Products page only. */
+.products-page .product-hero .hero-inner{
+  grid-template-columns:minmax(0,.92fr) minmax(330px,1.08fr);
+  gap:28px;
+  padding:clamp(24px,3vw,42px);
+  align-items:stretch;
+}
+.products-page .product-hero .hero-text{min-width:0}
+.products-page .product-hero h1{
+  max-width:none;
+  font-size:clamp(45px,5.2vw,76px);
+  line-height:.98;
+  letter-spacing:-.058em;
+}
+.products-page .product-hero .lead{
+  max-width:510px;
+  margin-top:18px;
+  font-size:15px;
+  line-height:1.65;
+}
+.products-page .product-hero-media{min-height:530px}
+.products-page .product-hero-media img{object-fit:cover}
+.products-page .product-offer{
+  margin-top:26px;
+  padding:24px;
+  border-radius:18px;
+  background:#f0f0ee;
+  color:#080809;
+  box-shadow:0 18px 38px rgba(0,0,0,.22);
+}
+.products-page .product-offer-kicker{
+  margin:0 0 8px;
+  color:#57575a;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.16em;
+  text-transform:uppercase;
+}
+.products-page .product-offer-price-row{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:baseline;
+  column-gap:12px;
+}
+.products-page .product-offer-price{
+  font-size:clamp(58px,6vw,84px);
+  font-weight:700;
+  line-height:.98;
+  letter-spacing:-.07em;
+  font-variant-numeric:tabular-nums;
+}
+.products-page .product-offer-unit{
+  color:#494949;
+  font-size:14px;
+  font-weight:600;
+}
+.products-page .product-offer-bundle{
+  margin:12px 0 0;
+  font-size:20px;
+  font-weight:500;
+  letter-spacing:-.03em;
+}
+.products-page .product-offer-bundle strong{font-weight:700}
+.products-page .product-offer-fine{
+  margin:10px 0 20px;
+  color:#56565a;
+  font-size:12px;
+  line-height:1.55;
+}
+.products-page .product-offer-cta{
+  width:100%;
+  min-height:50px;
+  background:#090909;
+  border-color:#090909;
+  color:#fff;
+  font-weight:700;
+}
+.products-page .product-offer-cta:hover{background:#272727;border-color:#272727}
+.products-page .product-sizes{padding-top:18px}
+.products-page .product-sizes-panel{
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:28px 32px;
+  background:linear-gradient(180deg, rgba(255,255,255,.03),rgba(255,255,255,.012)),rgba(13,13,13,.92);
+}
+.products-page .product-sizes-heading{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:end;
+  justify-content:space-between;
+  gap:16px 28px;
+}
+.products-page .product-sizes-heading .section-kicker{margin-bottom:8px}
+.products-page .product-sizes-heading h2{
+  margin:0;
+  font-size:clamp(28px,3.4vw,38px);
+  font-weight:600;
+  line-height:1;
+  letter-spacing:-.04em;
+}
+.products-page .product-sizes-heading p:not(.section-kicker){
+  max-width:450px;
+  margin:0;
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.55;
+}
+.products-page .product-size-list{
+  list-style:none;
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin:22px 0 0;
+  padding:0;
+}
+.products-page .product-size-list li{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-width:57px;
+  min-height:44px;
+  padding:8px 11px;
+  border:1px solid var(--line-2);
+  border-radius:11px;
+  color:#f2f2f2;
+  background:rgba(255,255,255,.045);
+  font-size:14px;
+  font-weight:600;
+  font-variant-numeric:tabular-nums;
+}
+.products-page .product-size-note{
+  margin:17px 0 0;
+  color:var(--muted);
+  font-size:13px;
+  line-height:1.5;
+}
+.products-page .product-details .media-copy h3{
+  font-size:clamp(22px,2.5vw,28px);
+  letter-spacing:-.035em;
+}
+.products-page .product-details .media-copy p{margin:0;font-size:14px;line-height:1.6}
+.products-page .product-last-call{padding-bottom:26px}
+.products-page .product-last-call .contact-panel{margin-top:0}
+.products-page .product-last-call .contact-panel h2{font-size:clamp(28px,3.4vw,38px)}
+.products-page .product-last-call .contact-panel p{margin-bottom:0}
+@media (max-width:1024px){
+  .products-page .product-hero .hero-inner{grid-template-columns:1fr;gap:22px}
+  .products-page .product-hero-media{min-height:0;aspect-ratio:4/3}
+  .products-page .product-hero-media img{object-fit:cover}
+}
+@media (max-width:760px){
+  .products-page .product-hero .hero-inner{padding:20px}
+  .products-page .product-hero h1{font-size:clamp(42px,11.5vw,56px)}
+  .products-page .product-hero .lead{font-size:14px}
+  .products-page .product-offer{padding:20px;margin-top:20px}
+  .products-page .product-offer-price{font-size:clamp(56px,17vw,76px)}
+  .products-page .product-offer-bundle{font-size:18px}
+  .products-page .product-sizes-panel{padding:22px 20px}
+  .products-page .product-size-list{gap:7px}
+  .products-page .product-size-list li{min-width:48px;min-height:40px}
+  .products-page .product-sizes-heading p:not(.section-kicker){font-size:13px}
+  .products-page .product-last-call{padding-bottom:10px}
+}
